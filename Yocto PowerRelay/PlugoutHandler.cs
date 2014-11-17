@@ -19,6 +19,7 @@ namespace lucidcode.LucidScribe.Plugout.Yocto.PowerRelay
     private Boolean Failed = false;
     private Boolean On = false;
     private Thread SwitchOffThread;
+    private Boolean SwitchingOff = false;
 
     public override string Name
     {
@@ -72,9 +73,12 @@ namespace lucidcode.LucidScribe.Plugout.Yocto.PowerRelay
 
           On = true;
 
-          // Turn it off in a minute
-          SwitchOffThread = new Thread(SwitchOff);
-          SwitchOffThread.Start();
+          if (!SwitchingOff)
+          {
+            // Turn it off in a minute
+            SwitchOffThread = new Thread(SwitchOff);
+            SwitchOffThread.Start();
+          }
         }
         else
         {
@@ -92,7 +96,9 @@ namespace lucidcode.LucidScribe.Plugout.Yocto.PowerRelay
     {
       Thread.Sleep(1000 * 60);
       On = false;
+      SwitchingOff = true;
       Trigger();
+      SwitchingOff = false;
       On = false;
     }
 
