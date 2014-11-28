@@ -86,7 +86,6 @@ namespace lucidcode.LucidScribe.Plugout.Yocto.PowerRelay
             SwitchOffThread.Start();
 
             // And allow it to turn back on in 10
-            AllowToSwitchOn = false;
             AllowToSwitchBackOnThread = new Thread(AllowToSwitchBackOn);
             AllowToSwitchBackOnThread.Start();
           }
@@ -111,6 +110,7 @@ namespace lucidcode.LucidScribe.Plugout.Yocto.PowerRelay
       Trigger();
       SwitchingOff = false;
       On = false;
+      AllowToSwitchOn = false;
     }
 
     public void AllowToSwitchBackOn()
