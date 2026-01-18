@@ -15,7 +15,7 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_4210C5B26664BD7B4C21B3A1C66C3BE8"
+        "MsmKey" = "8:_6239A709E7B8EB359ACA205220692EEC"
         "OwnerKey" = "8:_8A04AA9B98A94963AADF2135268ACC52"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -27,14 +27,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_8A04AA9B98A94963AADF2135268ACC52"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_823A42A1945F7319A7E9BB9BD7A9F128"
+        "OwnerKey" = "8:_8A04AA9B98A94963AADF2135268ACC52"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_963A2D1A0879D2BFCF882C976AB0FF59"
-        "OwnerKey" = "8:_8A04AA9B98A94963AADF2135268ACC52"
+        "MsmKey" = "8:_8A04AA9B98A94963AADF2135268ACC52"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -52,19 +52,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_963A2D1A0879D2BFCF882C976AB0FF59"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_8A04AA9B98A94963AADF2135268ACC52"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4210C5B26664BD7B4C21B3A1C66C3BE8"
+        "OwnerKey" = "8:_6239A709E7B8EB359ACA205220692EEC"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_823A42A1945F7319A7E9BB9BD7A9F128"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -164,7 +164,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:3.5.30729      "
+                "FrameworkVersion" = "8:3.5.30729       "
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -172,13 +172,18 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4210C5B26664BD7B4C21B3A1C66C3BE8"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_6239A709E7B8EB359ACA205220692EEC"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:YocoWrapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
+                    "_6239A709E7B8EB359ACA205220692EEC"
+                    {
+                    "Name" = "8:YocoWrapper.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:YocoWrapper.dll"
             "TargetName" = "8:"
@@ -218,13 +223,18 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_963A2D1A0879D2BFCF882C976AB0FF59"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_823A42A1945F7319A7E9BB9BD7A9F128"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:lucidcode.LucidScribe.Plugout.Interface, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
+                    "_823A42A1945F7319A7E9BB9BD7A9F128"
+                    {
+                    "Name" = "8:lucidcode.LucidScribe.Plugout.Interface.dll"
+                    "Attributes" = "3:512"
+                    }
                 }
             "SourcePath" = "8:lucidcode.LucidScribe.Plugout.Interface.dll"
             "TargetName" = "8:"
@@ -351,15 +361,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Lucid Scribe Yocto PowerRelay"
-        "ProductCode" = "8:{C0F6BB14-216A-488B-A66B-7A73027764E7}"
-        "PackageCode" = "8:{7D9E5DE7-A71F-4D41-919E-A9E8106B97BE}"
+        "ProductCode" = "8:{8D76F4E4-A6AF-44C0-B8F1-1E481EBFFD9C}"
+        "PackageCode" = "8:{104BFE63-3750-4531-814D-C6F684DD45CC}"
         "UpgradeCode" = "8:{F7366005-EA41-478D-BED9-08441C13A31E}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.4"
+        "ProductVersion" = "8:1.0.5"
         "Manufacturer" = "8:lucidcode"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:http://www.lucidcode.com/Contact"
